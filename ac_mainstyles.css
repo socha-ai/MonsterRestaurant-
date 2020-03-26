@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* font styles */
+
+header,p, h1 {
+    font-family: Orbitron;
+    font-size: 12px;}
+
+div.your_order p {
+    font-size: 15px;
+}
+
+div.orders p {
+    font-size: 14px;
+}
+body {
+    background-color: #FFB9B3;
+}
+
+/* start button styles */
+
+.topbutton {
+    border-radius: 25px;
+    border-style: solid 2px;
+    border-color: green;
+    font-family: Orbitron;
+    width: 80px;
+}
+
+#startbutton {
+    background-color: #40E0D0;
+}
+
+#resetbutton {
+    background-color: #FF1B2D;
+}
+
+#startbutton:hover {
+    background-color: #BBFFFF;
+}
+
+#resetbutton:hover {
+    background-color: #FFCCCB;
+}
+
+/* header styles */
+
+header {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* h1 styles */
+h1 {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* progress bar */
+div#progress-bar-container {
+    background-color: #EA899A;
+    border-radius: 5px;
+}
+
+div#progress_bar {
+    height:10px;
+    background-color: green;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* monster hover */
+
+p.name, p.food {
+    visibility: hidden;
+}
+
+a.monster:hover + p.name, a.food:hover +p.name {
+    visibility: visible;
+}
+
+
+/* float styles */
+
+div.monster {
+    float: left;
+}
+
+div.food {
+    float: left;
+}
+
+div.food_container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+/*images */
+img.monster {
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+img.food {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 7px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+img.selectedItems {
+    width: 120px;
+    height: 120px;
+    border-style: solid;
+}
+
+/* paragraph */
+p.name {
+    text-align: center;
+}
+
+p#number_correct {
+    font-size: 50px;
+}
+
+/* your order styles */
+div.your_order {
+    position: relative;
+}
+
+div.orders {
+    background-color:#FFDBE9;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+
+div.orders p {
+    text-align: justify;
+    margin-left: 20%;
+}
+
+div.column {
+    float: left;
+    width: 50%;
+}
+
+/*check box styles */
+
+div.centered {
+    position: absolute;
+    top: 30px;
+    left: 295px;
+}

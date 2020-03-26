@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Alien Cafe</title>
+        <link href="ac_mainstyles.css" rel="stylesheet" />
+        <link href="ac_gridstyles.css" rel="stylesheet" />
+        <link href="acl_mainstyles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class = "grid">
+        <div class="title">
+            <header>Lunch</header>
+        </div>
+
+        <div class="heading">
+            <h1> Welcome, Earthling! Your job is to serve these Aliens. Hover over an
+            alien or a dish for its name. Good luck! </h1>
+        </div>
+        <div class="progress_bar">
+            <div id="progress-bar-container">
+                <div id="progress_bar">
+                </div>
+            </div>
+        </div>
+
+        <div class = buttons>
+            <button class="topbutton" id ="startbutton" onclick="start(['sandwich', 'pizza', 'rice', 'sushi', 'fish', 'curry', 'dumplings', 'salad', 'nuggets', 'pasta'],
+                                                                ['Remi', 'Angela', 'Sam', 'Kyu', 'Jorge', 'Russel', 'Nic', 'Vi', 'Carly', 'Tom'],
+                                                                ['acl_sandwich.png', 'acl_pizza.png', 'acl_rice.jpg', 'acl_sushi.png', 'acl_fish.jpg',
+                                                                'acl_curry.jpg', 'acl_dumplings.jpg', 'acl_salad.png', 'acl_nuggets.png', 'acl_pasta.jpg'],
+                                                                ['acl_monster1.png', 'acl_monster2.png', 'acl_monster3.png', 'acl_monster4.png',
+                                                                'acl_monster5.png', 'acl_monster6.png', 'acl_monster7.png', 'ac_monster10.png', 'acl_monster9.png', 'acl_monster10.png'])">Start</button>
+            <button class="topbutton" id = "resetbutton" onclick="reset()">Reset</button>
+        </div>
+
+        <div class="monster_container">
+            <div class="monster" id="monster1">
+                <a class="monster"><img onclick="selectedM('acl_monster1.png')" class="monster" id= "Remi" src="acl_monster1.png" /></a>
+                <p class="name">Hi, I'm Remi</p>
+            </div>
+
+            <div class="monster" id="monster2">
+                <a class="monster"><img onclick="selectedM('acl_monster2.png')" class="monster" id = "Angela" src="acl_monster2.png" /></a>
+                <p class="name">Hi, I'm Angela</p>
+            </div>
+
+            <div class="monster" id="monster3">
+                <a class="monster"><img onclick="selectedM('acl_monster3.png')" class="monster" id = "Sam" src="acl_monster3.png" /></a>
+                <p class="name">Hi, I'm Sam</p>
+            </div>
+
+            <div class="monster" id="monster4">
+                <a class="monster"><img onclick="selectedM('acl_monster4.png')" class="monster" id = "Kyu" src="acl_monster4.png" /></a>
+                <p class="name">Hi, I'm Kyu</p>
+            </div>
+
+            <div class="monster" id="monster5">
+                <a class="monster"><img onclick="selectedM('acl_monster5.png')" class="monster" id = "Jorge" src="acl_monster5.png" /></a>
+                <p class="name">Hi, I'm Jorge</p>
+            </div>
+
+            <div class="monster" id="monster6">
+                <a class="monster"><img onclick="selectedM('acl_monster6.png')" class="monster" id = "Russel" src="acl_monster6.png" /></a>
+                <p class="name">Hi, I'm Russel</p>
+            </div>
+
+            <div class="monster" id="monster7">
+                <a class="monster"><img onclick="selectedM('acl_monster7.png')" class="monster" id = "Nic" src="acl_monster7.png" /></a>
+                <p class="name">Hi, I'm Nic</p>
+            </div>
+
+            <div class="monster" id="monster10">
+                <a class="monster"><img onclick="selectedM('ac_monster10.png')" class="monster" id = "Vi" src="ac_monster10.png" /></a>
+                <p class="name">Hi, I'm Vi</p>
+            </div>
+
+            <div class="monster" id="monster8">
+                <a class="monster"><img onclick="selectedM('acl_monster8.png')" class="monster" id = "Carly" src="acl_monster8.png" /></a>
+                <p class="name">Hi, I'm Carly</p>
+            </div>
+
+            <div class="monster" id="monster9">
+                <a class="monster"><img onclick="selectedM('acl_monster9.png')" class="monster" id = "Tom" src="acl_monster9.png" /></a>
+                <p class="name">Hi, I'm Tom</p>
+            </div>
+        </div>
+
+        <div class="food_container">
+            <div class="food" id="sandwich">
+                <a class="food"><img onclick= "selected('acl_sandwich.png')" class="food" id="sandwich" src="acl_sandwich.png"/></a>
+                <p class="name">Sandwich</p>
+            </div>
+
+            <div class="food" id="pizza">
+                <a class="food"><img onclick="selected('acl_pizza.png')" class="food" id="pizza" src="acl_pizza.png" /></a>
+                <p class="name">Pizza</p>
+            </div>
+
+            <div class="food" id="rice">
+                <a class="food"><img onclick="selected('acl_rice.jpg')" class="food" id="rice" src="acl_rice.jpg" /></a>
+                <p class="name">Rice</p>
+            </div>
+
+            <div class="food" id="sushi">
+                <a class="food"><img onclick="selected('acl_sushi.png')" class="food" id="sushi" src="acl_sushi.png" /></a>
+                <p class="name">Sushi</p>
+            </div>
+
+            <div class="food" id="fish">
+                <a class="food"><img onclick="selected('acl_fish.jpg')" class="food" id="fish" src="acl_fish.jpg" /></a>
+                <p class="name">Fish</p>
+            </div>
+
+            <div class="food" id="curry">
+                <a class="food"><img onclick="selected('acl_curry.jpg')" class="food" id="curry" src="acl_curry.jpg" /></a>
+                <p class="name">Curry</p>
+            </div>
+
+            <div class="food" id="dumplings">
+                <a class="food"><img onclick="selected('acl_dumplings.jpg')" class="food" id="dumplings" src="acl_dumplings.jpg" /></a>
+                <p class="name">Dumplings</p>
+            </div>
+
+            <div class="food" id="salad">
+                <a class="food"><img onclick="selected('ac_salad.png')" class="food" id="salad" src="ac_salad.png" /></a>
+                <p class="name">Salad</p>
+            </div>
+
+            <div class="food" id="nuggets">
+                <a class="food"><img onclick="selected('acl_nuggets.png')" class="food" id="nuggets" src="acl_nuggets.png" /></a>
+                <p class="name">Nuggets</p>
+            </div>
+
+            <div class="food" id="pasta">
+                <a class="food"><img onclick="selected('acl_pasta.jpg')" class="food" id="pasta" src="acl_pasta.jpg" /></a>
+                <p class="name">Pasta</p>
+            </div>
+        </div>
+
+        <div class="orders">
+            <div class = "column"><p id="order1">Press Start to Play</p></div>
+            <div class="column"><p id="order2"></p></div>
+        </div>
+
+        <div class="your_order">
+            <p> You selected: &nbsp; &nbsp; For: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Correct: </p>
+            <img class= "selectedItems" id="selectedOrder" src="ac_whitebox.png" />
+            <img class = "selectedItems" id="selectedMonster" src="ac_whitebox.png" />
+            <img class = "selectedItems" id="check" src="ac_whitebox.png"/>
+            <div class="centered"><p id="number_correct">0</p></div>
+        </div>
+        </div>
+
+
+    </body>
+
+    <footer>
+    </footer>
+
+</html>

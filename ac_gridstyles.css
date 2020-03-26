@@ -1,0 +1,40 @@
+/* grid styles */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-areas:
+    ". title title ."
+    ". heading heading ."
+    ". progress_bar progress_bar ."
+    ". monster_container orders . "
+    ". food_container your_order .";
+
+}
+
+.title {
+    grid-area: title;
+}
+
+.heading {
+    grid-area: heading;
+}
+
+.progress_bar {
+    grid-area: progress_bar;
+}
+
+.monster_container {
+    grid-area: monster_container;
+}
+
+.food_container {
+    grid-area: food_container;
+}
+
+.orders {
+    grid-area: orders;
+}
+.your_order {
+    grid-area: your_order;
+}

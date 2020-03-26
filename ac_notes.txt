@@ -1,0 +1,13 @@
+Text File with notes :
+
++ operator
+-----------
+This operator only works for SIBLINGS so they must be under the same div
+parent.
+
+:hover and how to use
+-----------------------------
+Since it operates with the + operator, you can use classes for this.
+
+use flexbox to organize the set up, maybe use a table for the monsters
+and food icons and have div elements including the monster and their name.

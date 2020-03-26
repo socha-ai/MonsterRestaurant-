@@ -1,0 +1,45 @@
+body {
+    background-color: #B19CD9;
+}
+header {
+    font-size: 50px;
+    text-align: center;
+    background-color: #A8AEDD;
+}
+header, h1, li {
+    font-family: Orbitron;
+    color: #400E63;
+    text-align: center;
+}
+
+div.nav_top {
+    margin: 100px;
+}
+li {
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 42%;
+    margin-bottom: 5%;
+    text-align: center;
+
+    border-style: solid;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li#breakfast:hover {
+    background-color: #B6F486;
+}
+
+li#lunch:hover{
+    background-color: #B6F486;
+}
+
+li#dinner:hover{
+    background-color: #B6F486;
+}
